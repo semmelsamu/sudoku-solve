@@ -25,6 +25,8 @@
 
 #sudoku input:focus {
     outline: 1px solid blue;
+    z-index: 5;
+    position: relative;
 }
 
 /* Chrome, Safari, Edge, Opera */
