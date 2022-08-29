@@ -1,5 +1,5 @@
 
-const x = null;
+const x = "";
 
 example1 = [
     [x,x,1,9,8,4,7,6,x],
