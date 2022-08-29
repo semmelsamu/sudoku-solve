@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sudoku-solve</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sudoku.css">
+    <script src="./js/sudoku.js"></script>
+    <script src="./js/example.js"></script>
 </head>
 <body>
 
@@ -15,15 +18,15 @@
     <legend>sudoku-solve</legend>
 
     <table id="sudoku">
-    </table>
-
-    <hr>
-
-    <input type="checkbox" name="slow" id="slow">
-    <label for="slow">Slow mode</label><br>
+        <tr><th><button onclick="init(document.getElementById('sudoku'));">Initialize Sudoku Field</button></th></tr>
+        <script>init(document.getElementById('sudoku'));</script>
+    </table><br>
 
     <button onclick="generate();">Generate new Sudoku</button>
-    <button onclick="solve();">Solve this Sudoku</button>
+    <button onclick="solve();">Solve this Sudoku</button><br>
+
+    <input type="checkbox" name="slow" id="slow">
+    <label for="slow">Slow mode</label>
 
 </fieldset>
 
